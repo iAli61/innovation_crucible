@@ -242,14 +242,7 @@
     "href": "about.html",
     "title": "About Ali Bina",
     "section": "",
-    "text": "I am Ali Bina (PhD), a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of Artificial Intelligence and Material Science, focusing on cutting-edge Large Language Model (LLM) technologies, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.\nMy expertise spans from model pre-training and fine-tuning to evaluation and deployment, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications."
-  },
-  {
-    "objectID": "about.html#welcome",
-    "href": "about.html#welcome",
-    "title": "About Ali Bina",
-    "section": "",
-    "text": "I am Ali Bina (PhD), a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of Artificial Intelligence and Material Science, focusing on cutting-edge Large Language Model (LLM) technologies, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.\nMy expertise spans from model pre-training and fine-tuning to evaluation and deployment, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications."
+    "text": "I am Ali Bina (PhD), a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of Artificial Intelligence and Material Science, focusing on cutting-edge Large Language Model (LLM) technologies, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.\nMy expertise spans from model pre-training and fine-tuning to evaluation and deployment, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications.\n\n\n GitHub  LinkedIn  Email  Scholar\n\n\n\n\n\n\n\nAli Bina"
   },
   {
     "objectID": "about.html#research-interests-expertise",
@@ -285,5 +278,12 @@
     "title": "About Ali Bina",
     "section": "Beyond Research",
     "text": "Beyond Research\nWhen not architecting AI solutions or diving deep into research papers, you can find me:\n\nMentoring and leading technical teams and fostering cross-functional collaborations\nContributing to open-source scientific software projects and AI communities\nDelivering technical talks and workshops on emerging AI technologies\nExploring new frontiers in multimodal AI and agent-based systems\n\n“Passionate about solving hard problems at scale and empowering customers to innovate faster through AI.” - Mentoring students in computational materials science - Exploring the latest developments in machine learning conferences - Sharing knowledge through technical writing and presentations\n\nFeel free to reach out if you’re interested in collaboration, have questions about my research, or simply want to discuss the exciting possibilities at the intersection of AI and materials science."
+  },
+  {
+    "objectID": "about.html#welcome",
+    "href": "about.html#welcome",
+    "title": "About Ali Bina",
+    "section": "",
+    "text": "I am Ali Bina (PhD), a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of Artificial Intelligence and Material Science, focusing on cutting-edge Large Language Model (LLM) technologies, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.\nMy expertise spans from model pre-training and fine-tuning to evaluation and deployment, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications."
   }
 ]

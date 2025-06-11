@@ -1,35 +1,34 @@
 ---
 title: "About Ali Bina"
-image: media/images/AliBina.jpg
-image-width: 500px
-image-shape: round
-toc: false
 page-layout: full
-about:
-  template: solana
-  image-width: 26em
-  links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/iAli61
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/alibina61
-    - icon: envelope
-      text: Email
-      href: mailto:ali.bina1361@gmail.com
-    - icon: mortarboard
-      text: Google Scholar
-      href: https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de
+title-block-banner: false
+toc: false
+
 ---
 
-::: {.content-section}
-## Welcome
+::: {.hero-section}
+::: {.grid}
+::: {.g-col-md-7}
 
-I am **Ali Bina (PhD)**, a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of **Artificial Intelligence** and **Material Science**, focusing on cutting-edge **Large Language Model (LLM) technologies**, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.
+I am Ali Bina (PhD), a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of Artificial Intelligence and Material Science, focusing on cutting-edge Large Language Model (LLM) technologies, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.
 
-My expertise spans from **model pre-training and fine-tuning to evaluation and deployment**, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications.
+My expertise spans from model pre-training and fine-tuning to evaluation and deployment, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications.
+
+::: {.social-links style="margin-top: 2rem;"}
+<div class="d-flex flex-wrap gap-2">
+<a href="https://github.com/iAli61" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
+<a href="https://linkedin.com/in/alibina61" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="mailto:ali.bina1361@gmail.com" class="btn btn-outline-success btn-sm"><i class="bi bi-envelope"></i> Email</a>
+<a href="https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de" class="btn btn-outline-info btn-sm"><i class="bi bi-mortarboard"></i> Scholar</a>
+</div>
 :::
+:::
+::: {.g-col-md-5}
+![Ali Bina](media/images/AliBina.jpg){fig-alt="Ali Bina - Senior AI/ML Engineer" style="width:100%; height:auto; border-radius: 50%; max-width: 600px; margin: 0 auto; display: block;"}
+:::
+:::
+:::
+
 
 ::: {.content-section}
 ## Research Interests & Expertise

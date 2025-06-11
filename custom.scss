@@ -213,6 +213,20 @@ body:has(.quarto-about-solana) {
   }
 }
 
+/* About page full width layout */
+body:has(.quarto-about-solana) .page-columns {
+  display: block !important;
+}
+
+body:has(.quarto-about-solana) .column-sidebar {
+  display: none !important;
+}
+
+body:has(.quarto-about-solana) .column-body {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
 // Content sections within about page should have proper constraints
 .quarto-about-solana ~ .content-section {
   max-width: 1200px;
