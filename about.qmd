@@ -18,12 +18,9 @@ about:
     - icon: envelope
       text: Email
       href: mailto:ali.bina1361@gmail.com
-    - icon: file-earmark-pdf
-      text: CV/Resume
-      href: resume/Senior\ AI\ Scientist.md
     - icon: mortarboard
       text: Google Scholar
-      href: https://scholar.google.com/citations?user=yourprofile
+      href: https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de
 ---
 
 ::: {.content-section}
