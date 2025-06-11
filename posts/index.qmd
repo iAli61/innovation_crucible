@@ -5,16 +5,24 @@ title-block-banner: true
 listing:
   contents: "."
   sort: "date desc"
-  type: default
+  type: grid
+  grid-columns: 3
+  image-height: 200px
   categories: true
   sort-ui: true
   filter-ui: true
-  page-size: 10
+  page-size: 9
   feed: true
+  fields: [image, date, title, author, description, categories]
 ---
 
-Welcome to my research blog! Here you'll find insights from my daily exploration of AI and materials science, detailed analysis of recent papers, project updates, and thoughts on the future of computational materials research.
+::: {.content-section}
+## Welcome to My Research Blog
 
+Here you'll find insights from my daily exploration of AI and materials science, detailed analysis of recent papers, project updates, and thoughts on the future of computational materials research.
+:::
+
+::: {.content-section}
 ## Featured Topics
 
 - **Machine Learning Applications**: Practical implementations of ML in materials research
@@ -23,3 +31,4 @@ Welcome to my research blog! Here you'll find insights from my daily exploration
 - **Research Updates**: Progress reports on ongoing projects
 - **Conference Notes**: Key insights from academic and industry events
 - **Open Science**: Thoughts on reproducibility and open research practices
+:::

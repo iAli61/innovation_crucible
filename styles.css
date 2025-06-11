@@ -1,9 +1,169 @@
-/* Additional custom styles for fine-tuning */
+/* Global styling improvements for consistency */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+  line-height: 1.7;
+}
+
+/* Improve spacing and readability for all pages */
+#quarto-content {
+  padding-bottom: 4rem;
+}
+
+/* Ensure all content follows the same width constraints */
+.content-section,
+.quarto-title-block,
+.page-columns {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+/* More pronounced headings that follow the same style across all pages */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Match the styling of links across all pages */
+a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: darken(var(--bs-primary), 15%);
+  text-decoration: underline;
+}
+
+/* Lists should have the same appearance everywhere */
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure all buttons share the same styling */
+.btn-primary,
+.btn-outline-primary {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 0.5rem 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure all cards have the same appearance */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Consistent grid item styling for listings */
+.quarto-grid-item {
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.quarto-grid-item img {
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Add a clean separator between content sections */
+.content-section + .content-section {
+  border-top: 1px solid #f1f5f9;
+  padding-top: 3rem;
+}
+
+/* Consistent code block styling across all pages */
+pre {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f8fafc !important;
+  border-left: 4px solid var(--bs-primary);
+}
+
+/* Ensure consistent blockquote styling */
+blockquote {
+  border-left: 4px solid var(--bs-primary);
+  padding: 1rem 2rem;
+  background-color: #f8fafc;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #64748b;
+}
 
 /* Enhanced spacing for readability */
 .quarto-title-banner {
   padding: 3rem 0;
   background: linear-gradient(135deg, var(--bs-primary) 0%, rgba(59, 130, 246, 0.8) 100%);
+  position: relative;
+}
+
+.quarto-title-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('media/images/image19.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.quarto-title-banner .quarto-title,
+.quarto-title-banner .quarto-title-meta {
+  position: relative;
+  z-index: 1;
+}
+
+.quarto-title-banner h1 {
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure title blocks have the same styling */
+.quarto-title-meta {
+  margin-top: 1rem;
+}
+
+.quarto-title-meta-heading {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.quarto-title-meta-contents {
+  color: white;
+}
+
+/* Ensure all title-block-banner pages have consistent styling */
+.page-layout-full .quarto-title-banner {
+  margin-bottom: 3rem;
 }
 
 /* Smooth scrolling */
@@ -66,6 +226,313 @@ blockquote {
 
 /* Footer enhancements */
 .page-footer {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  background-color: #f8fafc;
   border-top: 1px solid #e2e8f0;
+}
+
+.page-footer p {
+  margin-bottom: 0;
+  color: #64748b;
+}
+
+.page-footer a {
+  color: var(--bs-primary);
+  transition: all 0.3s ease;
+}
+
+.page-footer a:hover {
+  color: darken(var(--bs-primary), 15%);
+  text-decoration: underline;
+}
+
+/* Hero section styling for simplified homepage */
+.hero-section {
+  padding: 4rem 1rem; /* Adjusted padding for full width */
+  text-align: left;
+  /* max-width: 800px; */ /* Removed max-width for full-width layout */
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(147, 197, 253, 0.02) 100%),
+              url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem; /* Added margin for separation */
+}
+
+.hero-section .grid {
+  align-items: center; /* Vertically align items in the grid */
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95); /* Slightly increased overlay opacity for better text contrast with image */
+  z-index: 1;
+}
+
+.hero-section > .grid > * { /* Target direct children of the grid for z-index */
+  position: relative;
+  z-index: 2;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Ensure the image in the hero section is responsive and styled */
+.hero-section .g-col-md-5 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Content section styling */
+.content-section {
+  margin: 3rem 0;
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.content-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-section li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.content-section li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--bs-primary);
+  font-weight: bold;
+}
+
+/* Blog post styles for consistent formatting */
+.content-section .listing-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+/* Add additional spacing between content sections for better readability */
+.content-section + .content-section {
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+/* Ensure listing items follow the same styling as content sections */
+.listing-category span {
+  background-color: var(--bs-primary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Consistent styling for blog post listings */
+.listing-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.listing-title:hover {
+  color: var(--bs-primary);
+}
+
+.listing-date {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+/* Category pill styling */
+.quarto-category {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--bs-primary);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 1rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.quarto-category:hover {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+/* CRITICAL: Override Quarto page layout grid system */
+.page-columns {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.column-body {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Force about page to use full viewport width */
+#quarto-content.quarto-container.page-columns.page-rows-contents.page-layout-article {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Enhanced content section styling for full width usage */
+.content-section {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Ensure content sections span full container width */
+#quarto-content .content-section {
+  width: calc(100vw - 8rem) !important;
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Add visual separation between sections */
+.content-section + .content-section {
+  margin-top: 3rem;
+}
+
+/* Responsive adjustments for content sections */
+@media (max-width: 768px) {
+  #quarto-content .content-section {
+    width: calc(100vw - 2rem) !important;
+    padding: 2rem !important;
+    margin: 1.5rem auto !important;
+  }
+  
+  .content-section + .content-section {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #quarto-content .content-section {
+    width: calc(100vw - 12rem) !important;
+    padding: 4rem !important;
+  }
+}
+
+/* Responsive styling for blog posts on mobile */
+@media (max-width: 768px) {
+  .content-section + .content-section {
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+  }
+}
+
+/* Project page specific styling */
+.content-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.content-section h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Project entry separator */
+.content-section hr {
+  margin: 2rem 0;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(59, 130, 246, 0.3), rgba(0,0,0,0));
+}
+
+/* Project status badges */
+.content-section strong:contains("Status") {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.content-section strong:contains("Status") + em {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: var(--bs-primary);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 1rem;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+}
+
+/* Links in project descriptions */
+.content-section a {
+  color: var(--bs-primary);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.content-section a:hover {
+  border-bottom: 1px solid var(--bs-primary);
+  background-color: rgba(59, 130, 246, 0.05);
 }

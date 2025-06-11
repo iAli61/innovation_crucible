@@ -27,26 +27,40 @@ Traditional single-LLM approaches often fall short when tackling complex scienti
 
 Our multi-agent system for materials discovery automates scientific research through coordinated agents, each with specialized roles:
 
-```{mermaid}
-graph TD
-    A[Research Coordinator Agent] --> B[Literature Mining Agent]
-    A --> C[Patent Analysis Agent]
-    A --> D[Knowledge Graph Agent]
-    A --> E[HPC Simulation Agent]
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">graph TD
+    A[Research Coordinator Agent] --&gt; B[Literature Mining Agent]
+    A --&gt; C[Patent Analysis Agent]
+    A --&gt; D[Knowledge Graph Agent]
+    A --&gt; E[HPC Simulation Agent]
     
-    B --> F[Document Processing]
-    C --> G[IP Landscape Analysis]
-    D --> H[Dynamic Knowledge Construction]
-    E --> I[Computational Validation]
+    B --&gt; F[Document Processing]
+    C --&gt; G[IP Landscape Analysis]
+    D --&gt; H[Dynamic Knowledge Construction]
+    E --&gt; I[Computational Validation]
     
-    F --> J[Integrated Research Output]
-    G --> J
-    H --> J
-    I --> J
+    F --&gt; J[Integrated Research Output]
+    G --&gt; J
+    H --&gt; J
+    I --&gt; J
     
     style A fill:#ff6b6b
     style J fill:#4ecdc4
-```
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
 *Figure 1: Multi-agent architecture for automated materials research*
 :::
@@ -155,23 +169,37 @@ insight = rag_system.generate_research_insight(
 
 ### Agent Coordination Pattern
 
-```{mermaid}
-sequenceDiagram
+
+::::::{.cell layout-align="default"}
+
+:::::{.cell-output-display}
+
+::::{}
+`<figure class=''>`{=html}
+
+:::{}
+
+<pre class="mermaid mermaid-js">sequenceDiagram
     participant RC as Research Coordinator
     participant LM as Literature Mining Agent
     participant KG as Knowledge Graph Agent
     participant SIM as HPC Simulation Agent
     
-    RC->>LM: Query: "Novel battery materials 2024"
-    LM->>LM: Process 5B+ documents
-    LM->>KG: Submit extracted insights
-    KG->>KG: Update knowledge graph
-    KG->>RC: Return enriched context
-    RC->>SIM: Request computational validation
-    SIM->>SIM: Run DFT simulations
-    SIM->>RC: Return validated predictions
-    RC->>RC: Generate final research report
-```
+    RC-&gt;&gt;LM: Query: &quot;Novel battery materials 2024&quot;
+    LM-&gt;&gt;LM: Process 5B+ documents
+    LM-&gt;&gt;KG: Submit extracted insights
+    KG-&gt;&gt;KG: Update knowledge graph
+    KG-&gt;&gt;RC: Return enriched context
+    RC-&gt;&gt;SIM: Request computational validation
+    SIM-&gt;&gt;SIM: Run DFT simulations
+    SIM-&gt;&gt;RC: Return validated predictions
+    RC-&gt;&gt;RC: Generate final research report
+</pre>
+:::
+`</figure>`{=html}
+::::
+:::::
+::::::
 
 *Figure 2: Sequence diagram showing agent coordination for materials research workflow*
 

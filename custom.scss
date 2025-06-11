@@ -106,13 +106,53 @@ code {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-// Content sections
+// Content sections with full width and clear separation
 .content-section {
   background: white;
   border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid $primary;
+  transition: all 0.3s ease;
+  
+  // Ensure full width usage
+  width: 100%;
+  max-width: none !important;
+  
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+  }
+  
+  // Better typography within sections
+  h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(59, 130, 246, 0.2);
+  }
+  
+  h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: $primary;
+    font-weight: 600;
+  }
+  
+  ul {
+    margin-bottom: 1.5rem;
+    
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.7;
+    }
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
 }
 
 // Blog post styling
@@ -152,6 +192,217 @@ code {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+// About page optimizations for trestles template
+.about-trestles {
+  .about-left {
+    flex: 0 0 280px !important; // Reduce left column width from default
+    max-width: 280px !important;
+    margin-right: 2rem;
+  }
+  
+  .about-right {
+    flex: 1 1 auto;
+    min-width: 0; // Allows content to shrink if needed
+  }
+  
+  .about-entity {
+    .about-image {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    
+    .about-links {
+      .about-link {
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Responsive adjustments for about page
+@media (max-width: 991px) {
+  .about-trestles {
+    .about-left {
+      flex: 0 0 240px !important;
+      max-width: 240px !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-trestles {
+    flex-direction: column !important;
+    
+    .about-left {
+      flex: none !important;
+      max-width: 100% !important;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    
+    .about-right {
+      flex: none;
+    }
+  }
+}
+
+// Solana template optimizations - respect page layout
+.quarto-about-solana {
+  // Use standard page layout constraints
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+  
+  .about-entity {
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    .entity-contents {
+      flex: 1;
+      min-width: 0; // Allows content to shrink
+    }
+    
+    .about-image {
+      flex: 0 0 auto;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      order: 2; // Place image on the right
+    }
+  }
+  
+  .about-contents {
+    margin-top: 1rem;
+    max-width: none !important; // Remove width constraints
+    padding-right: 0 !important; // Remove default padding
+  }
+  
+  .about-links {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    
+    .about-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      background: rgba(59, 130, 246, 0.1);
+      border-radius: 0.5rem;
+      text-decoration: none;
+      color: $primary;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(59, 130, 246, 0.2) !important;
+      
+      &:hover {
+        background: rgba(59, 130, 246, 0.2);
+        color: $link-hover-color;
+        text-decoration: none;
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
+
+// About page content styling - respect page layout
+.quarto-about-solana ~ * {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+// Ensure content sections use proper width
+#quarto-content {
+  .content-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: auto; // Let it size naturally within constraints
+  }
+  
+  h2, h3, h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  // Style the main content areas
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  // Better list styling
+  ul, ol {
+    padding-left: 1.5rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+  
+  // Improve paragraph spacing
+  p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+  }
+}
+
+// Override any default Quarto container constraints - but respect page layout
+.quarto-container {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+// Ensure main content area respects page layout
+main.content {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+// Responsive adjustments for solana template
+@media (max-width: 768px) {
+  .quarto-about-solana {
+    padding: 0 1rem !important;
+    
+    .about-entity {
+      max-width: 100% !important;
+      flex-direction: column;
+      text-align: center;
+      padding: 1.5rem;
+      gap: 2rem;
+      
+      .about-image {
+        order: 0; // Move image to top on mobile
+        margin: 0 auto 1rem auto;
+      }
+    }
+  }
+  
+  main.content {
+    padding: 0 0.5rem !important;
+  }
+}
+
+// Medium screen adjustments
+@media (min-width: 769px) and (max-width: 1200px) {
+  .quarto-about-solana {
+    .about-entity {
+      max-width: 95% !important;
+    }
+  }
+}
+
 // Responsive improvements
 @media (max-width: 768px) {
   h1 {
@@ -161,4 +412,48 @@ code {
   .content-section {
     padding: 1.5rem;
   }
+}
+
+// CRITICAL: Override Quarto's page layout grid system for about page
+// This targets the specific classes that create the left margin
+.page-columns {
+  display: block !important; // Override CSS Grid layout
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+.page-columns .column-body {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+// Force the about section to use full width
+.page-columns .quarto-about-solana {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  position: relative;
+  left: 0 !important;
+}
+
+// Override the specific container that creates margins
+#quarto-content.quarto-container.page-columns {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+// Override Bootstrap's container system completely for about page
+body:has(.quarto-about-solana) .quarto-container,
+body:has(.quarto-about-solana) .container,
+body:has(.quarto-about-solana) .container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
 }

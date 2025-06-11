@@ -1,0 +1,65 @@
+---
+# Create a custom listing component for recent posts
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  image-height: 200px
+  max-items: 3
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [image, date, title, author, description]
+---
+
+```{=html}
+<div class="recent-posts-listing">
+  <div class="listing-title">Recent Posts</div>
+  <div class="listing-description">Explore my latest research, tutorials, and insights</div>
+</div>
+```
+
+::: {#listing-recent}
+:::
+
+<style>
+.recent-posts-listing {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.recent-posts-listing .listing-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+.recent-posts-listing .listing-description {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+#listing-recent .quarto-grid-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+#listing-recent .quarto-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+#listing-recent .listing-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+#listing-recent .listing-author {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+#listing-recent .listing-description {
+  font-size: 0.95rem;
+  color: #334155;
+}
+</style>

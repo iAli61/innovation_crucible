@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="quarto-$engine$" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+    $styles.html()$
+  </style>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+  $if(math)$
+  $math$
+  $endif$
+</head>
+<body class="fullcontent">
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+$if(title)$
+<div id="title-block-header" class="quarto-title-block default $if(title-block-banner)$ quarto-title-banner $endif$">
+<div class="quarto-title">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle lead">$subtitle$</p>
+$endif$
+</div>
+
+<div class="quarto-title-meta">
+$if(author)$
+<div>
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-contents">
+    $for(author)$
+    <p>$author$</p>
+    $endfor$
+  </div>
+</div>
+$endif$
+$if(date)$
+<div>
+  <div class="quarto-title-meta-heading">Published</div>
+  <div class="quarto-title-meta-contents">
+    <p class="date">$date$</p>
+  </div>
+</div>
+$endif$
+$if(categories)$
+<div>
+  <div class="quarto-title-meta-heading">Categories</div>
+  <div class="quarto-title-meta-contents">
+    $for(categories)$
+    <p class="category">$categories$</p>
+    $endfor$
+  </div>
+</div>
+$endif$
+</div>
+$if(image)$
+<div class="featured-image">
+  <img src="$image$" alt="$if(image-alt)$$image-alt$$else$Featured image$endif$" class="img-responsive">
+</div>
+$endif$
+</div>
+$endif$
+
+<main class="content" id="quarto-document-content">
+
+<div class="blog-content">
+$body$
+</div>
+
+$for(include-after)$
+$include-after$
+$endfor$
+</main>
+</div>
+
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+<style>
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.featured-image {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.featured-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .blog-content {
+    padding: 1rem;
+  }
+}
+</style>
+
+</body>
+</html>

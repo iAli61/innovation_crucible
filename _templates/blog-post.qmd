@@ -1,0 +1,14 @@
+---
+title: "{{< meta title >}}"
+author: "{{< meta author >}}"
+date: "{{< meta date >}}"
+categories: "{{< meta categories >}}"
+image: "{{< meta image >}}"
+description: "{{< meta description >}}"
+---
+
+{{#content}}
+::: {.content-section}
+{{{.}}}
+:::
+{{/content}}

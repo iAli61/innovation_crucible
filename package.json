@@ -1,0 +1,23 @@
+{
+  "name": "innovation_crucible",
+  "version": "1.0.0",
+  "description": "A professional website and research blog exploring the intersection of Artificial Intelligence and Material Science.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iAli61/innovation_crucible.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iAli61/innovation_crucible/issues"
+  },
+  "homepage": "https://github.com/iAli61/innovation_crucible#readme",
+  "dependencies": {
+    "playwright": "^1.53.0"
+  }
+}
