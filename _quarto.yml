@@ -1,0 +1,63 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "The Innovation Crucible"
+  description: "Exploring the intersection of AI and Material Science"
+  
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Blog"
+        href: posts/index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Projects"
+        href: projects.qmd
+    right:
+      - icon: github
+        href: https://github.com/iAli61
+      - icon: linkedin
+        href: https://linkedin.com/in/alibina61
+      - icon: envelope
+        href: mailto:ali.bina1361@gmail.com
+
+  sidebar:
+    style: "floating"
+    
+  page-footer:
+    left: |
+      © 2025 The Innovation Crucible. All rights reserved.
+    right: |
+      Built with [Quarto](https://quarto.org/)
+    background: light
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: true
+    toc-location: right
+    code-fold: true
+    code-tools: true
+    mainfont: "Inter"
+    fontsize: 1.1em
+    linestretch: 1.7
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+execute:
+  freeze: auto
