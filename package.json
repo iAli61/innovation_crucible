@@ -1,23 +1,45 @@
 {
-  "name": "innovation_crucible",
+  "name": "innovation-crucible",
   "version": "1.0.0",
   "description": "A professional website and research blog exploring the intersection of Artificial Intelligence and Material Science.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "Ali Bina (PhD)",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "machine-learning",
+    "materials-science",
+    "research",
+    "quarto",
+    "llm",
+    "scientific-computing"
+  ],
+  "homepage": "https://github.com/iAli61/innovation_crucible#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iAli61/innovation_crucible.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/iAli61/innovation_crucible/issues"
   },
-  "homepage": "https://github.com/iAli61/innovation_crucible#readme",
+  "scripts": {
+    "dev": "quarto preview",
+    "build": "quarto render",
+    "serve": "quarto preview --port 4444",
+    "clean": "rm -rf _site .quarto",
+    "lint:css": "stylelint **/*.{css,scss}",
+    "format": "prettier --write **/*.{md,qmd,json}",
+    "check": "quarto check",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
   "dependencies": {
     "playwright": "^1.53.0"
+  },
+  "devDependencies": {
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

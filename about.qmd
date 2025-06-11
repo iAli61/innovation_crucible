@@ -1,9 +1,10 @@
 ---
 title: "About Ali Bina"
 image: media/images/AliBina.jpg
-image-width: 200px
+image-width: 500px
 image-shape: round
 toc: false
+page-layout: full
 about:
   template: solana
   image-width: 26em

@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c40a39e2172e783e2ed9f20856f1ac55.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7a100844ad7ccd4e3c26551c53906bee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -136,6 +136,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<meta name="keywords" content="AI, Machine Learning, Materials Science, LLM, Scientific Computing">
+<meta name="author" content="Ali Bina (PhD)">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -168,6 +170,7 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="about-page-fix.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -292,53 +295,95 @@ window.Quarto = {
 </section>
 <section id="latest-posts" class="level2 content-section">
 <h2 class="anchored" data-anchor-id="latest-posts">Latest Posts</h2>
-<div class="recent-posts-listing">
-  <div class="listing-title">Recent Posts</div>
-  <div class="listing-description">Explore my latest research, tutorials, and insights</div>
+<div class="recent-posts-container">
+  <div class="recent-posts-header">
+    <h2 class="recent-posts-title anchored">Latest Research &amp; Insights</h2>
+    <p class="recent-posts-description">Explore my latest research, tutorials, and insights into AI and Materials Science</p>
+  </div>
 </div>
 <div id="listing-recent">
 
 </div>
 <style>
-.recent-posts-listing {
+.recent-posts-container {
   margin-bottom: 2rem;
   text-align: center;
 }
-.recent-posts-listing .listing-title {
-  font-size: 1.6rem;
+
+.recent-posts-header {
+  padding: 1rem 0 2rem 0;
+}
+
+.recent-posts-title {
+  font-size: 1.8rem;
   font-weight: 600;
   color: #1e293b;
   margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
-.recent-posts-listing .listing-description {
-  font-size: 1rem;
+
+.recent-posts-description {
+  font-size: 1.1rem;
   color: #64748b;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 #listing-recent .quarto-grid-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid #e2e8f0;
+  background: white;
 }
+
 #listing-recent .quarto-grid-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
+
 #listing-recent .listing-title {
   font-size: 1.2rem;
   font-weight: 600;
   color: #1e293b;
+  line-height: 1.4;
 }
+
 #listing-recent .listing-author {
   font-size: 0.9rem;
   color: #64748b;
+  font-weight: 500;
 }
+
 #listing-recent .listing-description {
   font-size: 0.95rem;
   color: #334155;
+  line-height: 1.5;
+}
+
+#listing-recent .listing-date {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .recent-posts-title {
+    font-size: 1.5rem;
+  }
+  
+  .recent-posts-description {
+    font-size: 1rem;
+  }
 }
 </style>
+color: #64748b; margin-bottom: 2rem; } #listing-recent .quarto-grid-item { transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; } #listing-recent .quarto-grid-item:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); } #listing-recent .listing-title { font-size: 1.2rem; font-weight: 600; color: #1e293b; } #listing-recent .listing-author { font-size: 0.9rem; color: #64748b; } #listing-recent .listing-description { font-size: 0.95rem; color: #334155; }
+
 </section>
 <section id="connect-with-me" class="level2 content-section">
 <h2 class="anchored" data-anchor-id="connect-with-me">Connect With Me</h2>

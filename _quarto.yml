@@ -41,11 +41,14 @@ format:
     theme: 
       - cosmo
       - custom.scss
-    css: styles.css
+    css: 
+      - styles.css
+      - about-page-fix.css
     toc: true
     toc-location: right
     code-fold: true
     code-tools: true
+    code-copy: true
     mainfont: "Inter"
     fontsize: 1.1em
     linestretch: 1.7
@@ -58,6 +61,8 @@ format:
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
           <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+          <meta name="keywords" content="AI, Machine Learning, Materials Science, LLM, Scientific Computing">
+          <meta name="author" content="Ali Bina (PhD)">
 
 execute:
   freeze: auto
