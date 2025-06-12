@@ -1,0 +1,249 @@
+/* Additional Styles - Focused and Minimal */
+
+/* Title Banner Enhancements */
+.quarto-title-banner {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, var(--bs-primary) 0%, rgba(59, 130, 246, 0.8) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.quarto-title-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('media/images/image05.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.quarto-title-banner h1 {
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quarto-title-banner .quarto-title,
+.quarto-title-banner .quarto-title-meta {
+  position: relative;
+  z-index: 1;
+}
+
+/* Recent Posts Listing */
+.recent-posts-listing {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recent-posts-listing .listing-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.recent-posts-listing .listing-description {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+/* Grid Item Hover Effects */
+.quarto-grid-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.quarto-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Enhancements */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+table th {
+  background-color: var(--bs-primary);
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Blockquote Styling */
+blockquote {
+  border-left: 4px solid var(--bs-primary);
+  padding: 1rem 2rem;
+  background-color: #f8fafc;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #64748b;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Image Enhancements */
+img {
+  transition: opacity 0.3s ease;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Mermaid Diagrams */
+.mermaid {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading States */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Accessibility Improvements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* About Page Layout Fixes */
+.page-layout-full .quarto-about-solana {
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  padding: 0 !important;
+}
+
+/* Ensure content sections don't overflow */
+.quarto-about-solana .about-entity {
+  box-sizing: border-box;
+}
+
+/* Fix for specific Quarto containers */
+#quarto-content.page-columns {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Override Bootstrap container constraints on about page */
+body:has(.quarto-about-solana) .container,
+body:has(.quarto-about-solana) .container-fluid {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ensure about page content doesn't have unwanted margins */
+.quarto-about-solana .about-contents {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Critical Fix: Remove left/right margins on about page */
+body:has(.quarto-about-solana) {
+  /* Remove any default body margins */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body:has(.quarto-about-solana) * {
+  /* Prevent any element from creating unwanted margins */
+  box-sizing: border-box;
+}
+
+/* Force full width for about page container */
+.quarto-about-solana {
+  /* Use viewport width to ensure full coverage */
+  width: 100vw !important;
+  /* Negative margins to counteract any container padding */
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  /* Remove any padding that could create white space */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  /* Ensure no overflow issues */
+  overflow-x: hidden;
+}
+
+/* Make sure the about entity stays centered but uses full width */
+.quarto-about-solana .about-entity {
+  /* Center the content but allow full width usage */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  /* Set a reasonable max-width for readability */
+  max-width: 1400px !important;
+  /* Add horizontal padding for mobile */
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Content sections after about should also use full width */
+.quarto-about-solana ~ .content-section {
+  /* Use same full-width technique */
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* But keep the inner content centered */
+.quarto-about-solana ~ .content-section > * {
+  max-width: 1400px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .quarto-about-solana .about-entity {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  .quarto-about-solana ~ .content-section > * {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}

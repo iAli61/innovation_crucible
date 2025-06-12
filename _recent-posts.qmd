@@ -1,0 +1,134 @@
+---
+# Recent Posts Listing Component
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  grid-columns: 3
+  image-height: 200px
+  max-items: 3
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [image, date, title, author, description]
+---
+
+```{=html}
+<div class="recent-posts-container">
+  <div class="recent-posts-header">
+    <h2 class="recent-posts-title">Latest Research & Insights</h2>
+    <p class="recent-posts-description">Explore my latest research, tutorials, and insights into AI and Materials Science</p>
+  </div>
+</div>
+```
+
+::: {#listing-recent}
+:::
+
+```{=html}
+<style>
+.recent-posts-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recent-posts-header {
+  padding: 1rem 0 2rem 0;
+}
+
+.recent-posts-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.recent-posts-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#listing-recent .quarto-grid-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  background: white;
+}
+
+#listing-recent .quarto-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+#listing-recent .listing-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+#listing-recent .listing-author {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+#listing-recent .listing-description {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+#listing-recent .listing-date {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .recent-posts-title {
+    font-size: 1.5rem;
+  }
+  
+  .recent-posts-description {
+    font-size: 1rem;
+  }
+}
+</style>
+```
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+#listing-recent .quarto-grid-item {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+#listing-recent .quarto-grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+#listing-recent .listing-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+#listing-recent .listing-author {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+#listing-recent .listing-description {
+  font-size: 0.95rem;
+  color: #334155;
+}
+</style>

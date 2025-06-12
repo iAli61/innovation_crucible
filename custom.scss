@@ -1,0 +1,260 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// Design System Variables
+$primary: #3b82f6;
+$secondary: #64748b;
+$success: #10b981;
+$info: #06b6d4;
+$warning: #f59e0b;
+$danger: #ef4444;
+$light: #f8fafc;
+$dark: #1e293b;
+
+// Typography System
+$body-color: #334155;
+$headings-color: #1e293b;
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-size-base: 1.1rem;
+$line-height-base: 1.7;
+
+// Link System
+$link-color: $primary;
+$link-hover-color: darken($primary, 15%);
+
+// Code System
+$code-bg: #f1f5f9;
+$code-color: #475569;
+
+// Spacing System
+$content-padding: 2rem;
+$section-spacing: 3rem;
+$border-radius-base: 12px;
+
+/*-- scss:rules --*/
+
+// Base Styles
+body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+// Typography Hierarchy
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: $headings-color;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, $primary, darken($primary, 20%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  font-size: 2rem;
+  border-bottom: 2px solid rgba($primary, 0.2);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+// Interactive Elements
+a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+  &:hover {
+    transform: translateY(-1px);
+    text-decoration: underline;
+  }
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Component Styles
+.card {
+  border: none;
+  border-radius: $border-radius-base;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+// Content Sections
+.content-section {
+  background: white;
+  border-radius: $border-radius-base;
+  padding: $content-padding;
+  margin: $section-spacing 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid $primary;
+  
+  h2:first-child {
+    margin-top: 0;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Code Blocks
+pre {
+  background-color: $code-bg !important;
+  border-left: 4px solid $primary;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+code {
+  background-color: $code-bg;
+  color: $code-color;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// Navigation
+.navbar {
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// About Page Layout (Solana Template)
+.quarto-about-solana {
+  max-width: 100% !important;
+  margin: 5rem !important;
+  padding: 0 !important;
+  
+  .about-entity {
+    background: white;
+    border-radius: $border-radius-base;
+    padding: $content-padding;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5rem auto $section-spacing auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .about-links {
+    .about-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba($primary, 0.1);
+      border-radius: 8px;
+      color: $primary;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid rgba($primary, 0.2);
+      margin: 1rem 0 7rem 0;
+
+      &:hover {
+        background: rgba($primary, 0.2);
+        color: $link-hover-color;
+        transform: translateY(-1px);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Fix Quarto layout containers for about page
+.page-layout-full .quarto-about-solana {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+// Override Quarto's default page margins for about page
+body:has(.quarto-about-solana) {
+  .page-columns {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  
+  .column-body {
+    margin: 0 !important;
+    padding: 0 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  #quarto-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
+
+/* About page full width layout */
+body:has(.quarto-about-solana) .page-columns {
+  display: block !important;
+}
+
+body:has(.quarto-about-solana) .column-sidebar {
+  display: none !important;
+}
+
+body:has(.quarto-about-solana) .column-body {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+// Content sections within about page should have proper constraints
+.quarto-about-solana ~ .content-section {
+  max-width: 1200px;
+  margin: $section-spacing auto;
+  padding: $content-padding;
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .content-section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .quarto-about-solana .about-entity {
+    padding: 1.5rem;
+    margin: 0 1rem $section-spacing 1rem;
+  }
+  
+  .quarto-about-solana ~ .content-section {
+    margin: $section-spacing 1rem;
+  }
+  
+  body:has(.quarto-about-solana) .column-body {
+    padding: 0 0.5rem !important;
+  }
+}

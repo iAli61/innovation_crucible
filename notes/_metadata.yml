@@ -1,0 +1,5 @@
+# Individual notes can set draft: true in their front matter
+# The notes index should not be a draft so the section is accessible
+format:
+  html:
+    toc: true

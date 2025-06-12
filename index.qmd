@@ -1,0 +1,47 @@
+---
+title: "The Innovation Crucible"
+page-layout: full
+title-block-banner: false
+toc: false
+---
+
+::: {.hero-section}
+::: {.grid}
+::: {.g-col-md-7}
+# Hi, I'm Ali Bina.
+## I help people build the world's best AI software.
+
+Senior AI/ML Engineer & Consultant at Microsoft Germany, specializing in Large Language Models, agent-based systems, and multimodal AI applications for scientific discovery and enterprise solutions.
+:::
+::: {.g-col-md-5}
+![](media/images/image19.jpg){fig-alt="AI and scientific discovery illustration" style="width:100%; height:auto; border-radius: 8px;"}
+:::
+:::
+:::
+
+::: {.content-section}
+## What I Do
+
+I work at the intersection of cutting-edge AI research and practical enterprise applications, focusing on:
+
+- **Advanced LLM Technologies** - From model pre-training to enterprise deployment
+- **Agent-Based Scientific Research** - Multi-agent systems for materials science
+- **Enterprise RAG Systems** - Production-ready retrieval-augmented generation
+- **MLOps & LLMOps at Scale** - Scalable AI infrastructure and deployment
+:::
+
+::: {.content-section}
+## Latest Posts
+
+{{< include _recent-posts.qmd >}}
+:::
+
+::: {.content-section}
+## Connect With Me
+
+I'm always interested in discussing new research opportunities, collaboration possibilities, or simply exchanging ideas about the future of AI in scientific discovery.
+
+- **Email**: [ali.bina1361@gmail.com](mailto:ali.bina1361@gmail.com)
+- **LinkedIn**: [linkedin.com/in/alibina61](https://linkedin.com/in/alibina61)
+- **GitHub**: [github.com/iAli61](https://github.com/iAli61)
+:::

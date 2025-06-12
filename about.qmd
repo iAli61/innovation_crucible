@@ -1,0 +1,119 @@
+---
+title: "About Ali Bina"
+page-layout: full
+title-block-banner: false
+toc: false
+
+---
+
+::: {.hero-section}
+::: {.grid}
+::: {.g-col-md-7}
+
+I am Ali Bina (PhD), a results-driven Senior AI/ML Engineer and Consultant at Microsoft Germany, with over 10 years of hands-on experience in software development, data science, machine learning, and AI. I specialize in the fascinating intersection of Artificial Intelligence and Material Science, focusing on cutting-edge Large Language Model (LLM) technologies, including Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.
+
+My expertise spans from model pre-training and fine-tuning to evaluation and deployment, with deep proficiency in Python (PyTorch, TensorFlow, Keras, Hugging Face Transformers), C++, and designing/optimizing complex ML pipelines for enterprise applications.
+
+::: {.social-links style="margin-top: 2rem;"}
+<div class="d-flex flex-wrap gap-2">
+<a href="https://github.com/iAli61" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
+<a href="https://linkedin.com/in/ali-bina" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="mailto:ali.bina1361@gmail.com" class="btn btn-outline-success btn-sm"><i class="bi bi-envelope"></i> Email</a>
+<a href="https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de" class="btn btn-outline-info btn-sm"><i class="bi bi-mortarboard"></i> Scholar</a>
+</div>
+:::
+:::
+::: {.g-col-md-5}
+![Ali Bina](media/images/AliBina.jpg){fig-alt="Ali Bina - Senior AI/ML Engineer" style="width:100%; height:auto; border-radius: 50%; max-width: 600px; margin: 0 auto; display: block;"}
+:::
+:::
+:::
+
+
+::: {.content-section}
+## Research Interests & Expertise
+
+My work encompasses several key areas where AI and materials science converge:
+
+### **Advanced LLM Technologies**
+- **Retrieval-Augmented Generation (RAG)** for scientific discovery
+- **Agent-based systems** for materials research automation
+- **Multimodal AI applications** processing text, images, and formulas
+- **Fine-tuning and optimization** of large language models (Llama, GPT series)
+
+### **AI-Driven Materials Discovery**
+- **Multi-agent LLM systems** for materials research via literature/patent search
+- **Dynamic knowledge graph construction** for scientific data
+- **HPC simulation integration** and automation
+- **Variational Autoencoders (VAE)** for multimodal latent space representation
+
+### **Machine Learning for Scientific Applications**
+- **Computer vision** for microscopy image analysis and quality assessment
+- **Deep learning models** optimization using CUDA and GPU enhancements
+- **Natural language processing** for literature mining and document understanding
+- **Statistical modeling** and anomaly detection
+
+### **Enterprise AI Solutions**
+- **MLOps and LLMOps** best practices for scalable deployment
+- **End-to-end ML pipeline** design and optimization
+- **Customer technical engagements** and solution architecture
+- **Cross-functional collaboration** with domain experts
+:::
+
+::: {.content-section}
+## Professional Experience
+
+### **Senior AI/ML Engineer & Consultant | Microsoft Germany** *(10/2021 – Present)*
+
+Leading the architecture and implementation of cutting-edge AI platforms across Scientific Discovery, Insurance, Manufacturing, and Finance sectors, with a focus on **advanced LLM technologies** and **Generative AI solutions**.
+
+### **Machine Learning Researcher R&D | BASF Germany** *(04/2018 – 10/2021)*
+
+Pioneered Deep Learning applications in Molecular Sciences, developing novel **Variational Autoencoder (VAE)** architectures for multimodal latent space representation and chemical substance synthesis *(Patent: WO/2023/198927)*.
+
+### **Post-Doc in Machine Learning | Max-Planck-Institute** *(10/2014 – 01/2018)*
+
+Led research group developing automated algorithms for advanced microscopy data analysis using supervised/unsupervised ML, designing specialized CNN-RNN architectures for complex scientific problems.
+:::
+
+::: {.content-section}
+## Education & Achievements
+
+- **PhD, Mechanical Engineering (Summa cum laude)** | Ruhr-Universität Bochum (2011-2014)
+- **Post-Doc in Machine Learning** | Max Planck Institute (2014-2017)
+- **Master of Science, Nano-Materials Engineering** | MERC, Iran (2005-2008)
+- **3 Patents** in AI and materials science applications
+- **10+ Scientific Papers** in international peer-reviewed journals
+- **Max Planck Society Research Scholarship** (2013)
+:::
+
+::: {.content-section}
+## Current Focus
+
+I'm particularly passionate about:
+
+- **Advancing LLM applications** in scientific discovery and research automation
+- **Building multimodal AI systems** that process diverse scientific data types
+- **Developing agent-based architectures** for complex research workflows
+- **Bridging the gap** between cutting-edge AI research and practical enterprise applications
+:::
+
+::: {.content-section}
+## Beyond Research
+
+When not architecting AI solutions or diving deep into research papers, you can find me:
+
+- **Mentoring and leading** technical teams and fostering cross-functional collaborations
+- **Contributing to open-source** scientific software projects and AI communities
+- **Delivering technical talks** and workshops on emerging AI technologies
+- **Exploring new frontiers** in multimodal AI and agent-based systems
+
+*"Passionate about solving hard problems at scale and empowering customers to innovate faster through AI."*
+- Mentoring students in computational materials science
+- Exploring the latest developments in machine learning conferences
+- Sharing knowledge through technical writing and presentations
+
+---
+
+*Feel free to reach out if you're interested in collaboration, have questions about my research, or simply want to discuss the exciting possibilities at the intersection of AI and materials science.*
+:::

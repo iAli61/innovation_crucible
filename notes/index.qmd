@@ -1,0 +1,17 @@
+---
+title: "Notes"
+draft: true
+listing:
+  contents: "*/index.qmd"
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+# Notes
+
+Welcome to my notes section. This is where I collect thoughts, ideas, and quick observations.

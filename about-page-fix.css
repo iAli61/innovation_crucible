@@ -1,0 +1,62 @@
+/* About Page Full-Width Fix */
+
+/* This CSS specifically addresses the whitespace issues on the about page */
+
+/* Remove all default margins and padding from page containers */
+.page-layout-full .quarto-about-solana {
+  /* Force full viewport width */
+  width: 100vw;
+  /* Use negative margins to break out of container */
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  /* Remove any inherited padding */
+  padding: 0;
+  /* Prevent horizontal scroll */
+  overflow-x: hidden;
+}
+
+/* Ensure the about content uses the full available space */
+.quarto-about-solana .about-entity {
+  /* Use full width within the container */
+  width: 100%;
+  max-width: 1200px;
+  /* Center the content */
+  margin: 5 auto;
+  /* Add controlled padding for readability */
+  padding: 2rem;
+  /* Ensure proper box sizing */
+  box-sizing: border-box;
+}
+
+/* Fix for content sections that follow */
+.quarto-about-solana ~ .content-section {
+  /* Apply same full-width treatment */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 0;
+}
+
+/* Keep content sections readable */
+.quarto-about-solana ~ .content-section > * {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Override any Quarto default constraints */
+body:has(.quarto-about-solana) .page-columns,
+body:has(.quarto-about-solana) .column-body,
+body:has(.quarto-about-solana) #quarto-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .quarto-about-solana .about-entity,
+  .quarto-about-solana ~ .content-section > * {
+    padding: 1rem;
+  }
+}
