@@ -35,7 +35,9 @@ My work is centered on building the intelligent systems required to solve next-g
 
 ::: {.content-section}
 ## Selected Research & Insights
-Theory is important, but progress happens when it's put into practice. Here are some featured articles and case studies that bridge the gap between cutting-edge research and real-world application.
+Theory is important, but progress happens when it's put into practice. Here are some featured articles and case studies that bridge the gap between cutting-edge research and real-world application: 
+
+- Coming soon
 
 :::
 
