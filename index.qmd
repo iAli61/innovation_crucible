@@ -11,7 +11,7 @@ toc: false
 # Hi, I'm Ali Bina.
 ## I help people build the world's best AI software.
 
-Senior AI/ML Engineer & Consultant at Microsoft Germany, specializing in Large Language Models, agent-based systems, and multimodal AI applications for scientific discovery and enterprise solutions.
+Senior AI/ML Engineer & Consultant at Microsoft, specializing in Large Language Models, agent-based systems, and multimodal AI applications for scientific discovery and enterprise solutions.
 :::
 ::: {.g-col-md-5}
 ![](media/images/image19.jpg){fig-alt="AI and scientific discovery illustration" style="width:100%; height:auto; border-radius: 8px;"}
