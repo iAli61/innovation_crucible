@@ -7,10 +7,7 @@
   },
   {
     "listing": "/index.html",
-    "items": [
-      "/posts/index.html",
-      "/posts/my-first-post/index.html"
-    ]
+    "items": []
   },
   {
     "listing": "/notes/index.html",
