@@ -5,9 +5,10 @@ project:
 website:
   title: "The Innovation Crucible"
   description: "Exploring the intersection of AI and Material Science"
+  favicon: "media/logo/log04-mini-02.JPG"
   
   navbar:
-    logo: "media/logo/log04-mini.JPG"
+    logo: "media/logo/log04-mini-02.JPG"
     logo-alt: "The Innovation Crucible Logo"
     background: primary
     search: true

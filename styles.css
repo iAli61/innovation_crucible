@@ -247,3 +247,9 @@ body:has(.quarto-about-solana) * {
     padding-right: 1rem !important;
   }
 }
+
+/* Make navbar logo rounded and larger */
+.navbar-brand img {
+  border-radius: 50%;
+  height: 100px; /* Adjust as needed */
+}
