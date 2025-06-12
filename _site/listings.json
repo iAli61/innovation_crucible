@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/posts/index.html",
+    "items": [
+      "/posts/my-first-post/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/index.html",
@@ -7,9 +13,13 @@
     ]
   },
   {
-    "listing": "/posts/index.html",
+    "listing": "/notes/index.html",
     "items": [
-      "/posts/my-first-post/index.html"
+      "/notes/my-first-note/index.html"
     ]
+  },
+  {
+    "listing": "/notes/my-first-note/index.html",
+    "items": []
   }
 ]

@@ -31,7 +31,7 @@ This Quarto-based website serves as a digital laboratory for documenting researc
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/innovation-crucible.git
+   git clone https://github.com/iAli61/innovation-crucible.git
    cd innovation-crucible
    ```
 
@@ -120,7 +120,7 @@ MIT License - feel free to use this template for your own research website.
 
 For questions about this template or collaboration opportunities:
 - Email: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
+- GitHub: [@iAli61](https://github.com/iAli61)
 - LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
 
 ---

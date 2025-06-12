@@ -3,14 +3,74 @@ title: "Architecting Multi-Agent LLM Systems for Scientific Discovery"
 author: "Ali Bina (PhD)"
 date: "2024-12-15"
 categories: [LLM, agent-systems, scientific-discovery, RAG, multimodal-AI]
-image: "welcome-image.jpg"
+image: "../../media/images/image03.jpg"
 description: "Exploring the architecture and implementation of sophisticated multi-agent LLM systems for automating materials science research workflows."
+page-layout: full
+draft: true
 ---
 
 ::: {.content-section}
 ## The Future of Scientific Research: Multi-Agent LLM Systems
 
 As enterprises and research institutions increasingly adopt **Large Language Models** for complex workflows, one of the most promising frontiers is the development of **multi-agent architectures** for scientific discovery. In this post, I'll share insights from my recent work at Microsoft, where I led the design and implementation of sophisticated multi-agent LLM systems for materials discovery.
+
+```{=html}
+<div id="molecular-viewer"></div>
+
+<!-- Load React, ReactDOM, and Babel -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script type="text/babel">
+  function MolecularStructureViewer() {
+    const [molecule, setMolecule] = React.useState('water');
+    
+    const molecules = {
+      water: { formula: 'H₂O', bonds: 2, atoms: 3 },
+      methane: { formula: 'CH₄', bonds: 4, atoms: 5 },
+      benzene: { formula: 'C₆H₆', bonds: 12, atoms: 12 }
+    };
+    
+    return (
+      <div className="molecule-viewer" style={{
+        padding: '20px',
+        border: '2px solid #0066cc',
+        borderRadius: '10px',
+        backgroundColor: '#f8f9fa'
+      }}>
+        <h4>Molecular Structure Analyzer</h4>
+        <select 
+          value={molecule}
+          onChange={(e) => setMolecule(e.target.value)}
+          style={{marginBottom: '15px', padding: '8px'}}
+        >
+          {Object.keys(molecules).map(mol => (
+            <option key={mol} value={mol}>{mol.charAt(0).toUpperCase() + mol.slice(1)}</option>
+          ))}
+        </select>
+        
+        <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '15px'}}>
+          <div>
+            <strong>Formula:</strong><br/>
+            {molecules[molecule].formula}
+          </div>
+          <div>
+            <strong>Bonds:</strong><br/>
+            {molecules[molecule].bonds}
+          </div>
+          <div>
+            <strong>Atoms:</strong><br/>
+            {molecules[molecule].atoms}
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
+  ReactDOM.render(<MolecularStructureViewer />, document.getElementById('molecular-viewer'));
+</script>
+```
 :::
 
 ::: {.content-section}
@@ -27,40 +87,26 @@ Traditional single-LLM approaches often fall short when tackling complex scienti
 
 Our multi-agent system for materials discovery automates scientific research through coordinated agents, each with specialized roles:
 
-
-::::::{.cell layout-align="default"}
-
-:::::{.cell-output-display}
-
-::::{}
-`<figure class=''>`{=html}
-
-:::{}
-
-<pre class="mermaid mermaid-js">graph TD
-    A[Research Coordinator Agent] --&gt; B[Literature Mining Agent]
-    A --&gt; C[Patent Analysis Agent]
-    A --&gt; D[Knowledge Graph Agent]
-    A --&gt; E[HPC Simulation Agent]
+```{mermaid}
+graph TD
+    A[Research Coordinator Agent] --> B[Literature Mining Agent]
+    A --> C[Patent Analysis Agent]
+    A --> D[Knowledge Graph Agent]
+    A --> E[HPC Simulation Agent]
     
-    B --&gt; F[Document Processing]
-    C --&gt; G[IP Landscape Analysis]
-    D --&gt; H[Dynamic Knowledge Construction]
-    E --&gt; I[Computational Validation]
+    B --> F[Document Processing]
+    C --> G[IP Landscape Analysis]
+    D --> H[Dynamic Knowledge Construction]
+    E --> I[Computational Validation]
     
-    F --&gt; J[Integrated Research Output]
-    G --&gt; J
-    H --&gt; J
-    I --&gt; J
+    F --> J[Integrated Research Output]
+    G --> J
+    H --> J
+    I --> J
     
     style A fill:#ff6b6b
     style J fill:#4ecdc4
-</pre>
-:::
-`</figure>`{=html}
-::::
-:::::
-::::::
+```
 
 *Figure 1: Multi-agent architecture for automated materials research*
 :::
@@ -169,37 +215,23 @@ insight = rag_system.generate_research_insight(
 
 ### Agent Coordination Pattern
 
-
-::::::{.cell layout-align="default"}
-
-:::::{.cell-output-display}
-
-::::{}
-`<figure class=''>`{=html}
-
-:::{}
-
-<pre class="mermaid mermaid-js">sequenceDiagram
+```{mermaid}
+sequenceDiagram
     participant RC as Research Coordinator
     participant LM as Literature Mining Agent
     participant KG as Knowledge Graph Agent
     participant SIM as HPC Simulation Agent
     
-    RC-&gt;&gt;LM: Query: &quot;Novel battery materials 2024&quot;
-    LM-&gt;&gt;LM: Process 5B+ documents
-    LM-&gt;&gt;KG: Submit extracted insights
-    KG-&gt;&gt;KG: Update knowledge graph
-    KG-&gt;&gt;RC: Return enriched context
-    RC-&gt;&gt;SIM: Request computational validation
-    SIM-&gt;&gt;SIM: Run DFT simulations
-    SIM-&gt;&gt;RC: Return validated predictions
-    RC-&gt;&gt;RC: Generate final research report
-</pre>
-:::
-`</figure>`{=html}
-::::
-:::::
-::::::
+    RC->>LM: Query: "Novel battery materials 2024"
+    LM->>LM: Process 5B+ documents
+    LM->>KG: Submit extracted insights
+    KG->>KG: Update knowledge graph
+    KG->>RC: Return enriched context
+    RC->>SIM: Request computational validation
+    SIM->>SIM: Run DFT simulations
+    SIM->>RC: Return validated predictions
+    RC->>RC: Generate final research report
+```
 
 *Figure 2: Sequence diagram showing agent coordination for materials research workflow*
 
@@ -319,3 +351,20 @@ The innovation crucible is heating up – let's forge the future of AI-driven sc
 ---
 
 *Interested in collaborating on multi-agent systems or discussing enterprise LLM architectures? Connect with me on [LinkedIn](https://linkedin.com/in/alibina61) or [GitHub](https://github.com/iAli61).*
+
+```{=html}
+<div id="test-react"></div>
+
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+  function SimpleComponent() {
+    return React.createElement('div', {
+      style: { padding: '20px', backgroundColor: '#f0f0f0', border: '1px solid #ccc' }
+    }, 'Hello from React! Component is working.');
+  }
+  
+  ReactDOM.render(React.createElement(SimpleComponent), document.getElementById('test-react'));
+</script>
+```
