@@ -8,10 +8,11 @@ toc: false
 ::: {.hero-section}
 ::: {.grid}
 ::: {.g-col-md-7}
-# Hi, I'm Ali Bina.
-## I help people build the world's best AI software.
 
-Senior AI/ML Engineer & Consultant at Microsoft, specializing in Large Language Models, agent-based systems, and multimodal AI applications for scientific discovery and enterprise solutions.
+### Solving the Unseen: Accelerating Scientific Discovery with AI 
+
+The next generation of materials—for sustainable energy, advanced computing, and human health—are waiting to be discovered. I build intelligent systems, from machine learning potentials to AI research agents, to unlock them faster. Explore how we can bridge the gap between simulation and reality.
+
 :::
 ::: {.g-col-md-5}
 ![](media/images/image19.jpg){fig-alt="AI and scientific discovery illustration" style="width:100%; height:auto; border-radius: 8px;"}
@@ -20,14 +21,21 @@ Senior AI/ML Engineer & Consultant at Microsoft, specializing in Large Language 
 :::
 
 ::: {.content-section}
-## What I Do
+## My Focus Areas
+My work is centered on building the intelligent systems required to solve next-generation scientific challenges. I focus on three key areas:
 
-I work at the intersection of cutting-edge AI research and practical enterprise applications, focusing on:
+- AI for Materials Simulation: Developing data-driven interatomic potentials and machine learning models to accelerate the simulation of material properties, reducing the time from hypothesis to discovery.
 
-- **Advanced LLM Technologies** - From model pre-training to enterprise deployment
-- **Agent-Based Scientific Research** - Multi-agent systems for materials science
-- **Enterprise RAG Systems** - Production-ready retrieval-augmented generation
-- **MLOps & LLMOps at Scale** - Scalable AI infrastructure and deployment
+- Agent-Based Scientific Research: Engineering multi-agent AI systems that can autonomously design experiments, analyze data, and propose new research directions in materials science.
+
+- Enterprise AI & Scalable MLOps: Architecting and deploying robust, production-grade AI systems and infrastructure capable of handling the massive datasets and computational demands of modern scientific research.
+
+:::
+
+::: {.content-section}
+## Selected Research & Insights
+Theory is important, but progress happens when it's put into practice. Here are some featured articles and case studies that bridge the gap between cutting-edge research and real-world application.
+
 :::
 
 ::: {.content-section}
