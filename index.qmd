@@ -1,5 +1,5 @@
 ---
-title: "The Innovation Crucible"
+title: "Welcome to The Innovation Crucible"
 page-layout: full
 title-block-banner: false
 toc: false
@@ -31,17 +31,17 @@ I work at the intersection of cutting-edge AI research and practical enterprise 
 :::
 
 ::: {.content-section}
-## Latest Posts
-
-{{< include _recent-posts.qmd >}}
-:::
-
-::: {.content-section}
 ## Connect With Me
 
 I'm always interested in discussing new research opportunities, collaboration possibilities, or simply exchanging ideas about the future of AI in scientific discovery.
 
 - **Email**: [ali.bina1361@gmail.com](mailto:ali.bina1361@gmail.com)
-- **LinkedIn**: [linkedin.com/in/alibina61](https://linkedin.com/in/alibina61)
+- **LinkedIn**: [linkedin.com/in/ali-bina](https://linkedin.com/in/ali-bina)
 - **GitHub**: [github.com/iAli61](https://github.com/iAli61)
+:::
+
+::: {.content-section}
+## Latest Posts
+
+{{< include _recent-posts.qmd >}}
 :::

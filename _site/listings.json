@@ -7,11 +7,16 @@
   },
   {
     "listing": "/index.html",
-    "items": []
+    "items": [
+      "/posts/index.html",
+      "/posts/my-first-post/index.html"
+    ]
   },
   {
     "listing": "/notes/index.html",
     "items": [
+      "/notes/about/index.html",
+      "/notes/projects/index.html",
       "/notes/my-first-note/index.html"
     ]
   },

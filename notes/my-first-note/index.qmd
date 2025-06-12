@@ -350,7 +350,7 @@ The innovation crucible is heating up – let's forge the future of AI-driven sc
 
 ---
 
-*Interested in collaborating on multi-agent systems or discussing enterprise LLM architectures? Connect with me on [LinkedIn](https://linkedin.com/in/alibina61) or [GitHub](https://github.com/iAli61).*
+*Interested in collaborating on multi-agent systems or discussing enterprise LLM architectures? Connect with me on [LinkedIn](https://linkedin.com/in/ali-bina) or [GitHub](https://github.com/iAli61).*
 
 ```{=html}
 <div id="test-react"></div>

@@ -11,19 +11,17 @@ listing:
   sort-ui: false
   filter-ui: false
   fields: [image, date, title, author, description]
+  id: listing-recent
 ---
 
 ```{=html}
 <div class="recent-posts-container">
   <div class="recent-posts-header">
-    <h2 class="recent-posts-title">Latest Research & Insights</h2>
+    <h3 class="recent-posts-title">Latest Research & Insights</h3>
     <p class="recent-posts-description">Explore my latest research, tutorials, and insights into AI and Materials Science</p>
   </div>
 </div>
 ```
-
-::: {#listing-recent}
-:::
 
 ```{=html}
 <style>
@@ -50,8 +48,8 @@ listing:
 .recent-posts-description {
   font-size: 1.1rem;
   color: #64748b;
-  margin-bottom: 0;
-  max-width: 600px;
+  margin-bottom: 2rem;
+  max-width: 95rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -105,30 +103,3 @@ listing:
 }
 </style>
 ```
-  color: #64748b;
-  margin-bottom: 2rem;
-}
-#listing-recent .quarto-grid-item {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #e2e8f0;
-}
-#listing-recent .quarto-grid-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-#listing-recent .listing-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1e293b;
-}
-#listing-recent .listing-author {
-  font-size: 0.9rem;
-  color: #64748b;
-}
-#listing-recent .listing-description {
-  font-size: 0.95rem;
-  color: #334155;
-}
-</style>
