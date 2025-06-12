@@ -17,7 +17,7 @@ My expertise spans from model pre-training and fine-tuning to evaluation and dep
 ::: {.social-links style="margin-top: 2rem;"}
 <div class="d-flex flex-wrap gap-2">
 <a href="https://github.com/iAli61" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
-<a href="https://linkedin.com/in/alibina61" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+<a href="https://linkedin.com/in/ali-bina" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
 <a href="mailto:ali.bina1361@gmail.com" class="btn btn-outline-success btn-sm"><i class="bi bi-envelope"></i> Email</a>
 <a href="https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de" class="btn btn-outline-info btn-sm"><i class="bi bi-mortarboard"></i> Scholar</a>
 </div>
