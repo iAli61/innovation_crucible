@@ -14,14 +14,6 @@
   },
   {
     "listing": "/notes/index.html",
-    "items": [
-      "/notes/about/index.html",
-      "/notes/projects/index.html",
-      "/notes/my-first-note/index.html"
-    ]
-  },
-  {
-    "listing": "/notes/my-first-note/index.html",
     "items": []
   }
 ]

@@ -7,6 +7,8 @@ website:
   description: "Exploring the intersection of AI and Material Science"
   
   navbar:
+    logo: "media/logo/log04-mini.JPG"
+    logo-alt: "The Innovation Crucible Logo"
     background: primary
     search: true
     left:
