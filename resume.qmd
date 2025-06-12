@@ -1,0 +1,141 @@
+---
+title: "Resume"
+page-layout: full
+title-block-banner: false
+toc: true
+css: resume.css
+---
+
+<div class="resume-container">
+
+<div class="resume-header text-center">
+# Ali Bina (PhD)
+### Senior AI/ML Scientist & Software Engineering Lead
+
+<div class="contact-info">
+**ali.bina1361@gmail.com** | [LinkedIn](https://linkedin.com/in/ali-bina) | [GitHub](https://github.com/iAli61) 
+</div>
+</div>
+
+<div class="resume-section">
+
+## Summary
+
+A results-driven PhD-level **AI/ML Scientist and Software Engineering Lead** with over 10 years of hands-on experience in software development, data science, machine learning, and AI. Proven expertise in coding, system design, and the architecture, development, and deployment of cutting-edge Artificial Intelligence, Machine Learning, and particularly **Large Language Model (LLM) technologies, emphasizing innovative approaches to LLM utilization such as Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications.** 
+
+Proven expertise in **leading complex technical initiatives** in LLM utilization, from **model pre-training and fine-tuning to evaluation and deployment.** Deep proficiency in **Python (including PyTorch, TensorFlow, Keras, Hugging Face Transformers)**, C++, and designing/optimizing complex ML pipelines and full-stack RAG models for enterprise applications. Passionate about solving hard problems at scale, guiding and mentoring technical teams, and empowering customers to innovate faster by architecting and implementing scalable, high-performance AI-driven solutions.
+
+</div>
+
+<div class="resume-section">
+## Experience
+
+### Senior AI/ML Engineer & Consultant | Microsoft, Germany | 10/2021 – Present
+
+*Scientific Discovery, Insurance, Manufacturing, and Finance Sectors*
+
+Led the architecture, system design, and implementation of cutting-edge AI platforms and solutions, focusing on Deep Learning, **Generative AI, and advanced LLM technologies (RAG, agent-based architectures, multimodal AI)** to solve complex business problems and drive scientific discovery.
+
+#### Advanced LLM Research, Development & Deployment Leadership:
+
+- Led the technical design and implementation of a sophisticated **multi-agent LLM system (agent-based architecture) for Materials Discovery**, automating scientific research via literature/patent search, dynamic knowledge graph construction, and HPC simulation integration
+- Architected and delivered an advanced **multimodal AI solution incorporating Retrieval-Augmented Generation (RAG) for Scientific Discovery**, processing diverse data types (text, images, formulas) from 5B+ documents
+- Developed and deployed a **Knowledge-Based Insurance Policy Analysis Assistant** using LLMs for document understanding, knowledge graph construction, and a conversational interface
+- Implemented a **multi-agent LLM system (agent-based architecture) for News Summarization and Monitoring** for investment intelligence
+- **Fine-tuned Llama models using GRPO (Group Relative Policy Optimization)** to significantly enhance text summarization capabilities for an insurance company
+
+#### Deep Learning, MLOps & NVIDIA GPU Optimization:
+
+- Engineered and optimized Deep Learning models (**PyTorch, TensorFlow, Hugging Face Transformers**) for maximum performance using CUDA, GPU enhancements, and NVIDIA's tool stack
+- Developed custom NLP and deep learning solutions based on LLMs and multimodal foundation models
+- Instituted **MLOps best practices for LLM applications (LLMOps)**, leveraging Azure tools for robust data pipelines
+
+#### Cross-Domain AI Solutions & Stakeholder Collaboration:
+
+- Developed a **Financial Compliance Assistant** for IFRS-9 SPPI testing, building an agentic pipeline for analyzing structured/unstructured investment documents
+- Led development of a conversational AI service PoC for a major automobile company (OpenAI-based QnA, 95% useful response rate)
+- Developed a **Multi-Agent Root Cause Analysis System** for automotive manufacturing using knowledge graphs and structured reasoning
+
+### Machine Learning Researcher R&D | BASF, Germany | 04/2018 – 10/2021
+
+- Pioneered Deep Learning applications in Molecular Sciences; defined and developed software for a novel Variational Autoencoder (VAE) for multimodal latent space representation to predict properties and synthesize chemical substances (Patent: WO/2023/198927)
+- Spearheaded digital quality assessment solutions using Computer Vision, Deep Learning, and expert-in-the-loop active learning (Patent: WO/2023/285538)
+- Provided statistical consultancy and designed ML/DL solutions and AI-based autonomous systems
+
+### Algorithm Development Engineer | ZF Friedrichshafen, Düsseldorf, Germany | 01/2018 – 04/2018
+
+- Collaborated in the autonomous driving department using Agile-Scrum
+- Developed a multi-sensor data visualization tool, enhancing AI-driven scene perception and data integration for obstacle detection, tracking, and sensor fusion
+
+### Post-Doc in Machine Learning | Max-Planck-Institute for Sustainable Materials, Düsseldorf, Germany | 10/2014 – 01/2018
+
+- Developed automated algorithms for analyzing advanced microscopy data using supervised/unsupervised ML; designed a specialized CNN-RNN architecture achieving high accuracy
+- Led a research group (2 PhDs), applying advanced mathematics and ML to complex scientific problems and accelerating rare event simulations on HPC facilities
+</div>
+
+<div class="resume-section">
+## Skills and Competencies
+
+### AI/ML & Software Engineering Leadership:
+
+- **Advanced LLM Technologies:** Extensive experience in developing, fine-tuning, and deploying LLMs (e.g., Llama, GPT series) for complex applications. Proficient in **Retrieval-Augmented Generation (RAG), agent-based systems, and multimodal AI applications**
+- **AI Research & Innovation:** Proven ability to conduct **in-depth research into emerging LLM technologies**, staying at the forefront of advancements
+- **Software Development & System Design:** 10+ years of hands-on experience in defining, developing, and debugging complex software applications and AI/ML systems
+- **Machine Learning & Data Science:** Deep Learning (PyTorch, TensorFlow, Keras, CNNs, VAEs, RNNs, Transformers), Algorithm Development, Statistical Modeling
+- **Solution Architecture & Customer Enablement:** Customer advisory, requirements analysis, solution design, feature demonstration, PoC development
+
+### Technical Proficiencies:
+
+- **Programming Languages:** **Python (Expert: PyTorch, TensorFlow, Keras, Hugging Face Transformers, Scikit-learn, LangChain, LlamaIndex, Crewai, n8n)**, C++ (Proficient)
+- **MLOps & LLMOps:** End-to-end ML Pipeline Design, **Large-scale AI model evaluation and optimization**, Model Performance Tuning, Production Deployment
+- **Cloud Platforms:** Azure ML, Azure OpenAI Cognitive Services. Experience with concepts of OCI, AWS
+- **NVIDIA Technologies:** CUDA, Triton Inference Server, experience with AI Accelerators (NVIDIA GPUs)
+- **Data, Search & Retrieval:** Semantic Search, Vector DBs (Faiss, Pinecone, Vespa, Qdrant, Milvus), Data Engineering for complex data types
+
+**Domains of Application:** Scientific Discovery, NLP (Semantic Search, Q&A, Summarization), Computer Vision (OCR, Detection), Finance, Insurance, Manufacturing
+</div>
+
+<div class="resume-section">
+## Education
+
+- **PhD, Mechanical Engineering (Summa cum laude)** | Ruhr-Universität Bochum, Germany | 2011 – 2014
+- **Post-Doc in Machine Learning** | Max Planck Institute, Düsseldorf, Germany | 2014 – 2017
+- **Master of Science, Nano-Materials Engineering** | Material and Energy Research Center (MERC), Iran | 2005 – 2008
+- **Bachelor of Science, Materials Science and Engineering** | Azad University, Isfahan, Iran | 2000 – 2005
+</div>
+
+<div class="resume-section">
+## Certifications
+
+- 2019 Agile Product Owner
+- 2019 Agile Project Management
+- 2016 Bayesian Statistics: From Concept to Data Analysis | University of California-online
+- 2016 Machine Learning | Stanford University-online
+- 2013 Advance Professional Communication | Ruhr-Universität Bochum
+- 2013 Presentation Skills | MPIE, Düsseldorf
+- 2012 Self and Project Management | MPIE, Düsseldorf
+- 2012 Leadership Skills | MPIE, Düsseldorf
+</div>
+
+<div class="resume-section">
+## Languages
+
+- **English** (Fluent - Working Proficiency)
+- **Persian** (First language)
+- **German** (Good C1)
+- **Arabic** (Elementary)
+</div>
+
+<div class="resume-section">
+## Awards/Papers/Conferences/Patents
+
+### Notable Achievements in AI Research:
+
+- **3 patents** (e.g., WO/2023/198927 on VAE for multimodal latent space representation; WO/2023/285538 on CV/DL for quality assessment)
+- **10+ scientific papers** in international peer-reviewed journals (Full list on [Google Scholar](https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de))
+- **Multiple invited talks** and contributions at international conferences
+- 2013 Max Planck Society Research scholarship
+- 2010 International Max Planck Research School scholarship (IMPRS-SurMat)
+</div>
+
+</div>

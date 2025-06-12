@@ -18,7 +18,10 @@ I am Ali Bina (PhD), a results-driven AI/ML Scientist and Software Engineering L
 <a href="https://linkedin.com/in/ali-bina" class="btn btn-outline-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
 <a href="mailto:ali.bina1361@gmail.com" class="btn btn-outline-success btn-sm"><i class="bi bi-envelope"></i> Email</a>
 <a href="https://scholar.google.de/citations?user=k-nYX5MAAAAJ&hl=de" class="btn btn-outline-info btn-sm"><i class="bi bi-mortarboard"></i> Scholar</a>
+<a href="resume.html" class="btn btn-outline-warning btn-sm"><i class="bi bi-file-person"></i> Resume</a>
+
 </div>
+
 :::
 :::
 ::: {.g-col-md-5}
