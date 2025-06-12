@@ -3,6 +3,7 @@ title: "About Ali Bina"
 page-layout: full
 title-block-banner: false
 toc: false
+draft: true
 
 ---
 
@@ -58,6 +59,33 @@ My work encompasses several key areas where AI and materials science converge:
 - **End-to-end ML pipeline** design and optimization
 - **Customer technical engagements** and solution architecture
 - **Cross-functional collaboration** with domain experts
+:::
+
+::: {.content-section}
+## Professional Experience
+
+### **Senior AI/ML Engineer & Consultant | Microsoft Germany** *(10/2021 – Present)*
+
+Leading the architecture and implementation of cutting-edge AI platforms across Scientific Discovery, Insurance, Manufacturing, and Finance sectors, with a focus on **advanced LLM technologies** and **Generative AI solutions**.
+
+### **Machine Learning Researcher R&D | BASF Germany** *(04/2018 – 10/2021)*
+
+Pioneered Deep Learning applications in Molecular Sciences, developing novel **Variational Autoencoder (VAE)** architectures for multimodal latent space representation and chemical substance synthesis *(Patent: WO/2023/198927)*.
+
+### **Post-Doc in Machine Learning | Max-Planck-Institute** *(10/2014 – 01/2018)*
+
+Led research group developing automated algorithms for advanced microscopy data analysis using supervised/unsupervised ML, designing specialized CNN-RNN architectures for complex scientific problems.
+:::
+
+::: {.content-section}
+## Education & Achievements
+
+- **PhD, Mechanical Engineering (Summa cum laude)** | Ruhr-Universität Bochum (2011-2014)
+- **Post-Doc in Machine Learning** | Max Planck Institute (2014-2017)
+- **Master of Science, Nano-Materials Engineering** | MERC, Iran (2005-2008)
+- **3 Patents** in AI and materials science applications
+- **10+ Scientific Papers** in international peer-reviewed journals
+- **Max Planck Society Research Scholarship** (2013)
 :::
 
 ::: {.content-section}
