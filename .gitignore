@@ -51,3 +51,6 @@ coverage/
 .temp/
 resume/Senior AI Scientist.md
 site_libs
+*:sec.endpointdlp
+_site
+notes/Quantization-Aware-Training(QAT)
