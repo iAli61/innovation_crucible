@@ -159,6 +159,28 @@ code {
 .navbar {
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  .navbar-nav .nav-link {
+    font-weight: 500;
+  }
+  
+  .navbar-brand, .navbar-title, .navbar-title a {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    text-decoration: none !important;
+    white-space: nowrap;
+    
+    // Only apply width restrictions on smaller screens
+    @media (min-width: 992px) {
+      max-width: none; // Allow full width on desktop
+    }
+    
+    @media (max-width: 991px) {
+      max-width: 250px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
 }
 
 // About Page Layout (Solana Template)
@@ -250,6 +272,70 @@ body:has(.quarto-about-solana) .column-body {
   padding: $content-padding;
 }
 
+// Hero Section Styles
+.hero-section {
+  background: linear-gradient(135deg, rgba($primary, 0.05) 0%, rgba($primary, 0.1) 100%);
+  border-radius: $border-radius-base;
+  padding: $content-padding;
+  margin: $section-spacing 0;
+  
+  .grid {
+    align-items: center;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      text-align: center;
+    }
+  }
+  
+  .g-col-md-5 {
+    @media (max-width: 768px) {
+      order: -1; // Move image to top on mobile
+    }
+  }
+  
+  .social-links {
+    .btn {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+// Navbar Brand/Title Styles
+.navbar-brand {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.navbar-title {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Profile Image Styles
+.hero-section img {
+  border-radius: 50% !important;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 // Responsive Design
 @media (max-width: 768px) {
   h1 {
@@ -280,5 +366,108 @@ body:has(.quarto-about-solana) .column-body {
   
   body:has(.quarto-about-solana) .column-body {
     padding: 0 0.5rem !important;
+  }
+  
+  // Mobile Hero Section Fixes
+  .hero-section {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    
+    .grid {
+      gap: 1.5rem;
+      text-align: center;
+    }
+    
+    img {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    
+    .social-links {
+      margin-top: 1rem !important;
+      
+      .d-flex {
+        justify-content: center;
+        
+        .btn {
+          font-size: 0.75rem;
+          padding: 0.4rem 0.8rem;
+        }
+      }
+    }
+  }
+  
+  // Mobile Navbar Fixes
+  .navbar {
+    .navbar-brand, .navbar-title, .navbar-title a {
+      font-size: 1rem !important;
+      max-width: 180px; // Slightly larger for tablets
+    }
+    
+    .navbar-toggler {
+      padding: 0.25rem 0.5rem;
+      font-size: 1rem;
+    }
+    
+    .navbar-nav {
+      .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  
+  // Better mobile spacing
+  body {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+// Medium screens (tablets in landscape)
+@media (min-width: 769px) and (max-width: 991px) {
+  .navbar {
+    .navbar-brand, .navbar-title, .navbar-title a {
+      font-size: 1.1rem !important;
+      max-width: 220px;
+    }
+  }
+}
+
+// Extra small screens
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 1rem;
+    
+    img {
+      max-width: 150px;
+    }
+    
+    .social-links .d-flex {
+      flex-direction: column;
+      align-items: center;
+      
+      .btn {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  
+  .navbar {
+    .navbar-brand, .navbar-title, .navbar-title a {
+      font-size: 0.9rem !important;
+      max-width: 120px;
+    }
+  }
+  
+  .content-section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  body {
+    font-size: 0.95rem;
   }
 }
